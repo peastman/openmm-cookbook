@@ -12,9 +12,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/notebooks.css?v=9b8a9a20" />
     <script src="../../_static/documentation_options.js?v=3ce10a4d"></script>
-    <script src="../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="The OpenMM Tutorials" href="../../tutorials.html" />
@@ -147,43 +149,40 @@
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--142752.4876079469
--172711.9539923508
--176336.18781903278
--178055.14627084447
--178960.26399019334
--179457.57332565315
--179770.0952592657
--130436.52114254022
--154021.0780486033
--158811.00135505604
--161389.87921777263
--162920.6017039787
--163853.67843990776
--164585.6510613792
--165220.01254480955
--165692.51202410058
--166097.77382719648
--166331.08174906392
--166661.1123351564
--166877.99826871345
--167074.9498861644
--167259.08760448868
--167406.19972622118
--167499.3319206772
--167618.28494201097
--167730.31011671107
--167802.3998874226
--167883.7814560465
--167935.24061602782
--167989.88821465702
--168042.7640495326
--168117.5675763879
--168173.77324529662
--168231.66941123325
--168275.7496910818
--167353.88237220253
--167016.6888198159
+-142752.48745635626
+-172625.5906970187
+-176394.0522658165
+-178026.22731789164
+-178960.01049860026
+-179454.17178283463
+-179783.3774975983
+-130436.52102924723
+-154004.82944944323
+-159094.42603159996
+-161489.29779239662
+-162824.86785075036
+-163789.77013489057
+-164549.01107468302
+-165136.13198710768
+-165509.69957506444
+-166010.6327992076
+-166387.65919427734
+-166735.1952319207
+-166968.6624585235
+-167163.3636645149
+-167308.64824883488
+-167421.45523555798
+-167538.19925202275
+-167666.4337147324
+-167785.3618378105
+-167862.35737154656
+-167947.80578238014
+-168015.9524268112
+-168064.50353113175
+-168127.19521093776
+-168170.58551047262
+-167240.5299819175
+-166904.2854072608
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -259,6 +258,7 @@ tolerance. It not, it increases the strength of the harmonic restraints and perf
 <li class="toctree-l1 current"><a class="reference internal" href="../../cookbook.html">The OpenMM Cookbook</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../cookbook.html#getting-started">Getting Started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cookbook.html#simulation-protocols">Simulation Protocols</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../cookbook.html#customizing-interactions">Customizing Interactions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../cookbook.html#restraints-constraints-and-external-forces">Restraints, Constraints, and External Forces</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../cookbook.html#analysis-and-system-inspection">Analysis and System Inspection</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Analyzing%20Energy%20Contributions.html">Analyzing Energy Contributions</a></li>
@@ -323,7 +323,7 @@ tolerance. It not, it increases the strength of the harmonic restraints and perf
       &#169;2025, The OpenMM Contributors.
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
       &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
